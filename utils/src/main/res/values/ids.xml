@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_tag_autolayout_size" type="id"></item>
+    <item name="id_tag_autolayout_padding" type="id"></item>
+    <item name="id_tag_autolayout_margin" type="id"></item>
+
+    <!--  CustomTitleBar -->
+    <item name="id_status_view" type="id"></item>
+
+    <!-- xbanner -->
+    <item name="xbanner_pointId" type="id" />
+</resources>

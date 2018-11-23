@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TablesView">
+        <attr name="tabTopBackground" format="color"/>
+        <attr name="tabLineColor" format="color"/>
+        <attr name="tabLineHeight" format="dimension"/>
+        <attr name="tabmarginLeft" format="dimension"/>
+        <attr name="tabmarginTop" format="dimension"/>
+        <attr name="tabmarginRight" format="dimension"/>
+        <attr name="tabmarginBottom" format="dimension"/>
+        <attr name="tabParentTextSize" format="dimension"/>
+        <attr name="tabChildTextSize" format="dimension"/>
+    </declare-styleable>
+
+</resources>

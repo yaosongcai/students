@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AchieveView">
+        <attr name="achieve_titleBackground" format="color"/>
+        <attr name="achieve_textColor" format="color"/>
+        <attr name="achieve_textSize" format="dimension"/>
+        <attr name="achieve_msgColor" format="color"/>
+        <attr name="achieve_msgSize" format="dimension"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wq.students.timetable.ui.activity.TimetableActivity">
+
+    <View
+        android:id="@+id/view_status"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:background="#0078ff" />
+
+    <com.wq.utils.view.widget.CustomTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_status"
+        app:show_right_button="false"
+        app:title_background="#0078ff"
+        app:title_text="课表"
+        app:title_textColor="#fff">
+
+    </com.wq.utils.view.widget.CustomTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/title"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_quarter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#2b8fff" />
+
+        <ImageView
+            android:id="@+id/iv_arr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_quarter"
+            android:src="@drawable/top_arr" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#bcbcbc"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_class"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_top"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="@string/options_class"
+            android:layout_centerVertical="true"
+            android:textColor="#555555" />
+
+        <RelativeLayout
+            android:id="@+id/rl_class"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:minWidth="100dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_className"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_dropUp"
+                android:textColor="#2b8fff" />
+
+            <ImageView
+                android:id="@+id/iv_dropUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/drop_up" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.wq.students.timetable.ui.widget.TablesView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_class"
+        android:layout_marginTop="20dp"
+        android:visibility="visible" />
+
+    <com.wq.students.timetable.ui.widget.TextDemoView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="50dp"
+        android:visibility="gone" />
+
+
+    <!--使背景变灰-->
+    <View
+        android:id="@+id/main_darkview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_top"
+        android:background="@color/dark_bg"
+        android:visibility="gone" />
+
+</RelativeLayout>

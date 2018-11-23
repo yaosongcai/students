@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eef3fa"
+    tools:context="com.wq.students.achievement.ui.activity.AchieveActivity">
+
+    <com.wq.utils.view.widget.CustomTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_background="#0078ff"
+        app:title_text="成绩"
+        app:title_textColor="#fff">
+
+    </com.wq.utils.view.widget.CustomTitleBar>
+
+    <LinearLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_centerVertical="true"
+                android:text="2017-2018学年度上学期"
+                android:textColor="#1086ff" />
+
+            <ImageView
+                android:id="@+id/iv_arr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/tv_title"
+                android:src="@drawable/top_arr" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_up"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_dy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第一单元"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_toLeftOf="@+id/iv_right"
+                android:layout_centerVertical="true"
+                android:textColor="#505050"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_top"
+        android:background="#bcbcbc"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="10dp">
+
+        <com.wq.utils.view.widget.AchieveView
+            android:id="@+id/av"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+
+    <!--使背景变灰-->
+    <View
+        android:id="@+id/main_darkview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:background="@color/dark_bg"
+        android:visibility="gone" />
+
+</RelativeLayout>

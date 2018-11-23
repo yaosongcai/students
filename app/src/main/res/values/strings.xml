@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">students</string>
+
+    <!--登录页-->
+    <string name="prompt_email">请输入账号</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in">立即登录</string>
+    <string name="register_Prompt">未注册联系管理员或一键注册</string>
+    <string name="forget_passwrod">忘记密码</string>
+    <string name="setting">设置</string>
+    <string name="ccwqkj">重庆菀晴科技有限责任公司</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- home主页面与我的页面 -->
+    <string name="My_messages">我的信息</string>
+    <string name="Timetable">课表</string>
+    <string name="School_calendar">校历</string>
+    <string name="achievement">成绩</string>
+    <string name="Check_work_attendance">考勤</string>
+    <string name="Reward_and_punishment">奖惩</string>
+
+    <!-- 课表页面 -->
+    <string name="options_class">选择班级</string>
+
+    <!-- calendarview数据 -->
+    <string-array name="chinese_week_string_array">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+    <string name="sun">日</string>
+    <string name="mon">一</string>
+    <string name="tue">二</string>
+    <string name="wed">三</string>
+    <string name="thu">四</string>
+    <string name="fri">五</string>
+    <string name="sat">六</string>
+
+</resources>
